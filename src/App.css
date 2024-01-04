@@ -1,0 +1,139 @@
+
+body {
+  margin: 0;
+}
+
+.main {
+  display: grid;
+  place-items: center;
+}
+
+.Container-main {
+  max-width: 900px;
+}
+
+.Button {
+  border: 1px solid #242424;
+  width: 100px;
+  height: 50px;
+  border-radius: 25px;
+  transition: all .5s ease;
+}
+
+.Button:hover {
+  transform: scale(1.05);
+  border: 2px solid #222;
+}
+
+@keyframes modalAppear {
+  from {
+    opacity: 0;
+    transform: scale(0.2);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes modalDisappear {
+  from {
+    opacity: 1;
+    transform: scale(1);
+  }
+  to {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+}
+
+.Backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(5px); 
+  z-index: 999;
+}
+
+.Container-Modal {
+  display: grid;
+  place-items: center;
+  position: relative;
+  animation: modalAppear 0.5s ease-in-out; 
+}
+
+.Container-Modal-false {
+  animation: modalDisappear 0.5s ease-in-out;
+}
+
+.Modal {
+  display: flex;
+  position: absolute;
+  width: 400px;
+  z-index: 999;
+  top: 10%;
+  left: 15px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.Modal img {
+  width: 100%;
+  height: auto;
+}
+
+#CloseButton {
+  margin-left: 20px;
+}
+
+#imagePokemon {
+  width: 200px;
+}
+
+.Button-type {
+  border: 2px solid #FFF;
+  box-shadow: inset 0 0 5px red, 0 0 10px red;
+  width: 100px;
+  height: 40px;
+  border-radius: 50px;
+  background-color: transparent;
+  margin-left: 10px;
+}
+
+.water {
+  box-shadow: inset 0 0 5px blue, 0 0 10px blue;
+}
+
+.grass {
+  box-shadow: inset 0 0 5px green, 0 0 10px green;
+}
+
+.poison {
+  box-shadow: inset 0 0 5px purple, 0 0 10px purple;
+}
+
+.bug {
+  box-shadow: inset 0 0 5px rgb(6, 45, 6), 0 0 20px rgb(2, 22, 2);
+}
+
+.electric {
+  box-shadow: inset 0 0 5px gold, 0 0 10px gold;
+}
+
+.normal {
+  box-shadow: inset 0 0 5px burlywood, 0 0 10px burlywood;
+}
+
+.fairy {
+  box-shadow: inset 0 0 5px palevioletred, 0 0 10px palevioletred;
+}
+
+.faighting {
+  box-shadow: inset 0 0 5px orange, 0 0 10px orange;
+}
+
+.psychic {
+  box-shadow: inset 0 0 5px pink, 0 0 10px pink;
+}
