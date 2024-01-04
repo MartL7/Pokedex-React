@@ -26,10 +26,6 @@
 
 ¡Contribuciones son bienvenidas! Si encuentras un error o tienes alguna mejora, por favor abre un [issue](https://github.com/GeovasL7/Pokedex-React/issues) o envía una solicitud de extracción.
 
-## Licencia
-
-Este proyecto está bajo la licencia [MIT](LICENSE).
-
 ---
 
 Espero que encuentres útil este README. ¡Disfruta del Programa! 🚀
