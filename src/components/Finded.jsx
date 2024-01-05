@@ -7,7 +7,7 @@ export const FindedPokemon = ({ data, onClose }) => {
     <div className={ClassModal}>
       <div className="Backdrop"></div>
       <div className="Modal">
-          <div className="card rounded-5" style={{ width: '18rem' }}>
+          <div className="card rounded-5 offset-1 offset-md-4" style={{ width: '18rem' }}>
             <img
               src={data.sprites.front_default}
               id="imagePokemon"

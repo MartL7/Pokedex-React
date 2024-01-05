@@ -5,7 +5,7 @@ export function App() {
 
   const API_Pokemon = "https://pokeapi.co/api/v2/pokemon/"
   const [pokemonList, setPokemonList] = useState([]);
-
+  
   useEffect(() => {
     const fetchPokemon = async () => {
       const response = await fetch(API_Pokemon + "1");
@@ -37,7 +37,7 @@ export function App() {
   return (
     <>
       {pokemonList.map((pokemon, index) => (
-        <div key={index} className="col-12 col-md-4 my-2">
+        <div key={index} className="col-12 offset-1 offset-md-0 col-md-4 my-2">
           <div className="card text-center rounded-5" style={{ width: '18rem' }}>
             <img src={pokemon.sprites.front_default} id="imagePokemon" className="card-img-top" alt={pokemon.name} />
             <div className="card-body">
